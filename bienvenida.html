@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Zapatería LILI</h1>
+    <p>
+        Nuestra zapatería es un establecimiento dedicado a la venta de calzado para diferentes gustos, edades y necesidades.
+        <br><br>Puedes encontrar zapatos deportivos, casuales, escolares, etc. Nuestro objetivo es ofrecer productos de buena calidad y comodidad.
+    </p>
+
+    <table border="1">
+        <tr>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCDbwVAjfMDaimPbgtHY9OqI-FXusMkxE1px2vOIZJw&s=10" width="200" height="200" alt="Zapatos Escolares"></td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_ilc2crE9nEzd0pEHsJxleTa8oMwCgqI2FHlA6nx8g&s=10" width="200" height="200" alt="Tenis"></td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucu7ARy1f86Pg9ysWfcfWCNBe9-RHkaz_GPHmd7c3EQ&s=10" width="200" height="200" alt="Zapatos Casuales"></td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKL56cmOHDbt-EI-ZB2lCVaGXouC8xX-ekLfopEe9b9g&s=10" width="200" height="200" alt="Zapatos de Gala"></td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDiVG6o8Yp3k4UuG6SWmWUDstPbEtix7HJ2KnyO_pDCQ-FygTzxpnwSg&s=10" width="200" height="200" alt="Sandalias"></td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXZhHWSq25KEPDPq2K9bHy8XIS-zw_KvG5CAkuU0wi9g&s=10" width="200" height="200" alt="Botas"></td>
+        </tr>
+        <tr>
+            <td>Zapatos Escolares<br>$1200</td>
+            <td>Tenis<br>$1500</td>
+            <td>Zapatos casuales<br>$1300</td>
+            <td>Zapatos de Gala<br>$1800</td>
+            <td>Sandalias<br>$800</td>
+            <td>Botas<br>$1600</td>
+        </tr>
+    </table>
+
+    <br>
+    <h2>Comprar Artículos (Ingresa la cantidad)</h2>
+    <form>
+        <label>Zapatos Escolares ($1200):</label>
+        <input type="number" id="cant1" min="0" value="0">
+        <br><br>
+
+        <label>Tenis ($1500):</label>
+        <input type="number" id="cant2" min="0" value="0">
+        <br><br>
+
+        <label>Zapatos casuales ($1300):</label>
+        <input type="number" id="cant3" min="0" value="0">
+        <br><br>
+
+        <label>Zapatos de Gala ($1800):</label>
+        <input type="number" id="cant4" min="0" value="0">
+        <br><br>
+
+        <label>Sandalias ($800):</label>
+        <input type="number" id="cant5" min="0" value="0">
+        <br><br>
+
+        <label>Botas ($1600):</label>
+        <input type="number" id="cant6" min="0" value="0">
+        <br><br>
+
+        <button type="button" onclick="calcular()">COMPRAR</button>
+    </form>
+
+    <p id="suma"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
